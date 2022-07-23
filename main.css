@@ -43,12 +43,12 @@ header {
     cursor: pointer;
     box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px;
-    transition: background-color 0.3s margin-right 1s ease;
   }
 
   button:hover{
     background-color: #f6980c;
     box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+    transition: background-color 0.3s ease-in;
   }
 
   .about__image {
@@ -106,7 +106,10 @@ header {
     padding-top: 115px; 
     padding-bottom: 115px;
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
+
   .form h1{
     font-size: 48px;
   }
@@ -123,14 +126,15 @@ header {
   }
 
   .form form{
+    margin-top: 60px;
     display: grid;
     grid-gap: 20px;
-    margin-top: 60px;
+    
   }
   .form label{
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .form input, .form select{
@@ -140,6 +144,7 @@ header {
     padding: 0px 20px;
     border-radius: 15px;
     border: none;
+    outline: none;
   }
 
   .form__submit{
@@ -150,10 +155,6 @@ header {
 
   select {
     appearance: none;
-  }
-
-  input, select {
-    outline: none;
   }
 
   footer{
@@ -177,9 +178,8 @@ header {
     margin-right: 80px;
   }
 
-  .footer__group h3{
+  footer h3{
     font-size: 16px;
-    /* color: #f6980c; */
     opacity: 0.7;
     margin-bottom: 30px;
   }
