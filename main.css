@@ -234,6 +234,7 @@ header {
 /* Мobils */
 @media (max-width: 720px) {
   header {
+      position: static;
       padding: 10px;
   }
 
