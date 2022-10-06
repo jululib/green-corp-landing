@@ -55,6 +55,13 @@ header {
     transition: background-color 0.3s ease-in;
   }
 
+  .orb-canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+
   .about__image {
     width: 500px;
   }
@@ -82,6 +89,7 @@ header {
     align-items: center;
     padding-top: 115px;
     padding-bottom: 115px;
+    position: relative;
   }
 
   .about h1 {
