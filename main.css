@@ -5,14 +5,24 @@ body {
   }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: #fff;
+    background: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     z-index: 1;
+    left: 0;
+    right: 0;
+    transition:.25s ease;
+  
+  }
+
+  .header__scrolled {
+    background-color: #fff;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
   }
 
   .form{
@@ -87,7 +97,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 115px;
+    padding-top: 200px;
     padding-bottom: 115px;
     position: relative;
   }
@@ -402,7 +412,7 @@ header {
 /* Мobils */
 @media (max-width: 720px) {
   header {
-      position: static;
+      /* position: static; */
       padding: 10px;
   }
 
